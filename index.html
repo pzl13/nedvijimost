@@ -1,0 +1,1363 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Недвижимость в Херсоне, Купить квартиру, дом в Херсне. База недвижимости в Херсоне</title>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+<meta name="keywords" content="">   
+<meta name="description" content="Недвижимость в Херсоне: квартиры, дома, земельные участки. Лучшие преложения от собственников по недвижимости а городе Херсон.">
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="Cache-Control" content="no-cache">
+	<link href="public/css/style.css" type="text/css" rel="stylesheet">
+
+<meta charset="utf-8">
+<script src="public/js/jquery.min.js"></script>
+
+</head>
+<body>
+
+<div class="FA">
+<div class="TMenu">
+<p>
+<a href="https://www.volvocars.com/us/v/cars/c40-electric" class="atmenu">Главная</a>
+
+
+
+
+</p>
+</div>
+
+<div class="LogoLine">
+<a href="https://www.volvocars.com/us/v/cars/c40-electric"><img src="public\images\logo.png" class="logo"></a>
+<a href="tel:0957339909" class="tel1">+38 (095) 733-99-09</a>
+<a href="tel:0957339909" class="tel2">+38 (068) 733-99-09</a>
+
+<div class="TopBut" onclick="onLineBut();"><span id="specBlock" style="dsplay:block;">Онлайн заявка<span></span></span></div>
+</div>
+
+<div class="MenuLine" id="mainmenu">
+<p>
+
+<div class="MainMenu MainMenu1"><span>Продажа квартир</span></div>  |
+<div class="MainMenu MainMenu2"><span>Продажа домов</span></div>  |
+<div class="MainMenu"><a href="https://www.volvocars.com/us/v/cars/c40-electric">Земельные участки</a></div>  |
+<div class="MainMenu MainMenu3"><span>Коммерческая недвижимость</span></div>  |
+<div class="MainMenu MainMenu4"><span>Аренда</span></div>
+
+
+<div class="Osn1" id="men1">
+<p><a href="https://www.volvocars.com/us/v/cars/c40-electric">1-комн. квартиры</a></p>
+<p><a href="https://www.volvocars.com/us/v/cars/c40-electric">2-комн. квартиры</a></p>
+<p><a href="https://www.volvocars.com/us/v/cars/c40-electric">3-комн. квартиры</a></p>
+<p><a href="https://www.volvocars.com/us/v/cars/c40-electric">4-комн. квартиры</a></p>
+<p><a href="https://www.volvocars.com/us/v/cars/c40-electric">5-комн.  и более квартиры</a></p>
+<p><a href="https://www.volvocars.com/us/v/cars/c40-electric">Коммунальные квартиры</a></p>
+</div>
+
+<div class="Osn2">
+<p><a href="https://www.volvocars.com/us/v/cars/c40-electric">Дома</a></p>
+<p><a href="https://www.volvocars.com/us/v/cars/c40-electric">Часть дома</a></p>
+</div>
+
+<div class="Osn3">
+<p><a href="https://www.volvocars.com/us/v/cars/c40-electric">Офисы</a></p>
+<p><a href="https://www.volvocars.com/us/v/cars/c40-electric">Торговые площадки</a></p>
+</div>
+
+<div class="Osn4">
+<p><a href="https://www.volvocars.com/us/v/cars/c40-electric">1-комн. квартиры</a></p>
+<p><a href="https://www.volvocars.com/us/v/cars/c40-electric">2-комн. квартиры</a></p>
+<p><a href="https://www.volvocars.com/us/v/cars/c40-electric">3-комн. квартиры</a></p>
+<p><a href="https://www.volvocars.com/us/v/cars/c40-electric">4-комн. квартиры</a></p>
+<p><a href="https://www.volvocars.com/us/v/cars/c40-electric">Дома</a></p>
+<p><a href="https://www.volvocars.com/us/v/cars/c40-electric">Офисы</a></p>
+<p><a href="https://www.volvocars.com/us/v/cars/c40-electric">Торговые площадки</a></p>
+</div>
+
+</div>
+<div class="NoMenuLine" id="NoMainMenu"></div>
+
+
+
+<div class="schBlock">
+<form action="" method="post" name="sfr">
+
+<div class="searchform">
+<p><span class="sForm">Подбор недвижимости</span></p>
+<div class="sfBlock">
+	<span class="sfLine">Тип сделки:</span>
+	<select name="sdelka" class="serSel">
+	<option value="p">Продажа</option>
+	<option value="a">Аренда</option>
+	</select>
+
+	<span class="sfLine2">Недвижимость:</span>
+	<select name="type_n" id="type_n" class="serSel2" onchange="getEtag();">
+	<option value="">Любая</option>
+    <option value="1">1-комн. квартира</option>
+	<option value="2">2-комн. квартира</option>
+	<option value="3">3-комн. квартира</option>
+	<option value="4">4-комн. квартира</option>
+	<option value="5">5-комн. квартира и более.</option>
+	<option value="7">Коммуналка</option>
+    <option value="8">Дом</option>
+	<option value="9">Часть дома</option>
+	<option value="11">Участок</option>
+	<option value="12">Офис</option>
+	<option value="13">Торговая площадка</option>
+	<option value="14">Производственные помещения</option>
+	<option value="15">Кафе, бары, рестораны</option>
+	<option value="16">Отель, гостиница</option>
+	<option value="17">База отдыха, пансионат</option>
+	<option value="18">Помещ. св. назначения</option>
+	<option value="19">Готовый бизнес</option>
+	</select>
+</div>
+
+<div class="sfBlock">
+	<span class="sfLine">Регион:</span>
+	<select name="misto" id="misto" class="serSel" onchange="getRayon();">
+	<option value="Херсон">Херсон</option>
+	<option value="Белозёрка">Белозёрка</option>
+	<option value="Приозёрное">Приозерное</option>
+	<option value="Олешки">Олешки</option>
+	<option value="Железный Порт">Железный Порт</option>
+	<option value="Лазурное">Лазурное</option>
+	<option value="Большевик">Большевик</option>
+	<option value="Скадовск">Скадовск</option>
+	<option value="Голая Пристань">Голая Пристань</option>
+	<option value="с. Геройское">с. Геройское</option>
+	<option value="с. Красное">с. Красное</option>
+	<option value="с. Хорлы">с. Хорлы</option>
+	<option value="с. Станислав">с. Станислав</option>
+	<option value="Геническ">Геническ</option>
+	</select>
+
+	<span class="sfLine2">Район:</span>
+<select name="rayon" class="serSel2" id="rayon">
+    <option value="">Любой</option>
+<option value="Антоновка">Антоновка</option>
+<option value="Военка, Цыганка, Слободка">Военка, Цыганка, Слободка</option>
+<option value="Восточный, Киндийка">Восточный, Киндийка</option>
+<option value="Жиллмасив, Привокзальный">Жиллмасив, Привокзальный</option>
+<option value="Жилпосёлок">Жилпосёлок</option>
+<option value="Забалка, Сухарный">Забалка, Сухарный</option>
+<option value="Зеленовка">Зеленовка</option>
+<option value="Мельницы">Мельницы</option>
+<option value="Остров, Нефтегавань">Остров, Нефтегавань</option>
+<option value="Порт, Порт-Элеватор">Порт, Порт-Элеватор</option>
+<option value="пос. Янтарный">пос. Янтарный</option>
+<option value="Геологов, Куйбышево, Камышаны">Геологов, Куйбышево, Камышаны</option>
+<option value="Северный, Таврический">Северный, Таврический</option>
+<option value="Степановка">Степановка</option>
+<option value="ХБК, Стеклотара">ХБК, Стеклотара</option>
+<option value="Центр">Центр</option>
+<option value="Чернобаевка">Чернобаевка</option>
+<option value="Шуменский">Шуменский</option>
+<option value="Текстильный">Текстильный</option>
+</select>
+</div>
+
+<div class="sfBlock">
+	<span class="sfLine">Цена от:</span>
+	<input type="text" class="serIn" name="priceot" value="">
+
+	<span class="sfLine2">Этажность:</span>
+	<select name="etagnost" id="etagnost" class="serSel2">
+    <option value="">Любой</option>
+	<option value="1">Только средние этажи</option>
+	</select>
+</div>
+
+<div class="sfBlock">
+	<span class="sfLine">Цена до:</span>
+	<input type="text" class="serIn" name="pricedo" value="">
+<input type="submit" value="ПОДОБРАТЬ" class="srButton">
+</div>
+
+
+</div>
+</form>
+</div>
+<div class="nedvPage">
+<!--div class="adFav"></div-->
+<div id="insMyFav"></div>
+</div>
+<div class="ItemCont">
+<div class="ItemBlock" id="item3794">
+<img src="public\images\starp.png" class="addToFav" onclick="addToFavID('3794');" alt="Добавить в избранное" id="imgStarPlus3794">
+<img src="public\images\starm.png" class="addToFav" onclick="addToFavID('3794');" alt="Добавить в избранное" id="imgStarMinus3794">
+
+<span class="iTitle"><a href="https://www.volvocars.com/us/v/cars/c40-electric" target="newblank">Трехкомнатная квартира с автономным отоплением в Центре</a></span>
+<div class="iFoto">
+<a href="https://www.volvocars.com/us/v/cars/c40-electric">
+<img src="public\images\small_17961.jpg" class="iFotoimg imgTop" style="margin: -21px 0 0 -0px">
+</a>
+</div>
+
+
+
+<span class="iType">Тип:</span>
+<span class="iTypeInfo">
+3-комн. квартира</span>
+
+<span class="iRayon">Район:</span>
+<span class="iRayonInfo">
+Центр</span>
+
+<span class="iSq">Площадь:</span>
+<span class="iSqInfo"> 60 / 47 / 6  м. кв.</span>
+
+<span class="iEtag">Этаж:</span>
+<span class="iEtagInfo">5 / 5</span>
+
+<span class="iSreet">Улица:</span>
+<span class="iStreetInfo">Б. Мозолевского (Фрунзе) ул.</span>
+
+
+<p class="iOpis">
+Продается 3-х комнатная квартира в уютном дворике по улице Фрунзе. Расположена на 5м этаже 5го дома. Крыша надежная, двойная - плоская + шатровая. Общая площадь 60 кв.м. Состояние жилое, но...</p>
+
+
+<span class="iTel">
+Стефурак Виолетта тел. (068) 752-73-10</span>
+<span class="iPriceOld"></span>
+<span class="iPrice">
+37 800 у.е.</span>
+</div><div class="ItemBlock" id="item3762">
+<img src="public\images\starp.png" class="addToFav" onclick="addToFavID('3762');" alt="Добавить в избранное" id="imgStarPlus3762">
+<img src="public\images\starm.png" class="addToFav" onclick="addToFavID('3762');" alt="Добавить в избранное" id="imgStarMinus3762">
+
+<span class="iTitle"><a href="items-1.html?id=3762" target="newblank">Однокомнатная квартира в кирпичном доме в Центре города</a></span>
+<div class="iFoto">
+<a href="items-1.html?id=3762">
+<img src="public\images\small_17735.jpg" class="iFotoimg imgTop" style="margin: -116px 0 0 -0px">
+</a>
+</div>
+
+
+
+<span class="iType">Тип:</span>
+<span class="iTypeInfo">
+1-комн. квартира</span>
+
+<span class="iRayon">Район:</span>
+<span class="iRayonInfo">
+Центр</span>
+
+<span class="iSq">Площадь:</span>
+<span class="iSqInfo"> 32 / 15 / 6  м. кв.</span>
+
+<span class="iEtag">Этаж:</span>
+<span class="iEtagInfo">9 / 9</span>
+
+<span class="iSreet">Улица:</span>
+<span class="iStreetInfo">Московская ул.</span>
+
+
+<p class="iOpis">
+Продажа однокомнатной квартиры по улице Московская. Расположена на 9м этаже 9го кирпичного дома. Данный дом славиться отличным ОСМД, поэтому о состоянии крыши и чистотой подъезда, можно...</p>
+
+
+<span class="iTel">
+Стефурак Виолетта тел. (068) 752-73-10</span>
+<span class="iPriceOld"></span>
+<span class="iPrice">
+34 000 у.е.</span>
+</div><div class="ItemBlock" id="item245">
+<img src="public\images\starp.png" class="addToFav" onclick="addToFavID('245');" alt="Добавить в избранное" id="imgStarPlus245">
+<img src="public\images\starm.png" class="addToFav" onclick="addToFavID('245');" alt="Добавить в избранное" id="imgStarMinus245">
+
+<span class="iTitle"><a href="items-2.html?id=245" target="newblank">Продам уютную 3-комн. квартиру на Таврическом, средний этаж.</a></span>
+<div class="iFoto">
+<a href="items-2.html?id=245">
+<img src="public\images\small_17947.jpg" class="iFotoimg imgGor" style="margin: -0px 0 0 -31px">
+</a>
+</div>
+
+
+
+<span class="iType">Тип:</span>
+<span class="iTypeInfo">
+3-комн. квартира</span>
+
+<span class="iRayon">Район:</span>
+<span class="iRayonInfo">
+Северный, Таврический</span>
+
+<span class="iSq">Площадь:</span>
+<span class="iSqInfo"> 63 / 37 / 10  м. кв.</span>
+
+<span class="iEtag">Этаж:</span>
+<span class="iEtagInfo">5 / 9</span>
+
+<span class="iSreet">Улица:</span>
+<span class="iStreetInfo">Карбышева ул.</span>
+
+
+<p class="iOpis">
+Продам ухоженную квартиру на 1-Таврическом по ул. Карбышева, 5/9, не угловая. Общая площадь 63 м.кв., жилая 37 м.кв., кухня 10 м.кв., возможно увеличить за счет балкона. Состояние хорошее жилое,...</p>
+
+
+<span class="iTel">
+Светлана Лавренко тел. (095) 678-51-59</span>
+<span class="iPriceOld"></span>
+<span class="iPrice">
+39 000 у.е.</span>
+</div><div class="ItemBlock" id="item2738">
+<img src="public\images\starp.png" class="addToFav" onclick="addToFavID('2738');" alt="Добавить в избранное" id="imgStarPlus2738">
+<img src="public\images\starm.png" class="addToFav" onclick="addToFavID('2738');" alt="Добавить в избранное" id="imgStarMinus2738">
+
+<span class="iTitle"><a href="items-3.html?id=2738" target="newblank">Продам 2 комнатную квартиру на ХБК </a></span>
+<div class="iFoto">
+<a href="items-3.html?id=2738">
+<img src="public\images\small_10723.jpg" class="iFotoimg imgTop" style="margin: -0px 0 0 -0px">
+</a>
+</div>
+
+
+
+<span class="iType">Тип:</span>
+<span class="iTypeInfo">
+2-комн. квартира</span>
+
+<span class="iRayon">Район:</span>
+<span class="iRayonInfo">
+ХБК, Стеклотара</span>
+
+<span class="iSq">Площадь:</span>
+<span class="iSqInfo"> 46 / 32 / 6  м. кв.</span>
+
+<span class="iEtag">Этаж:</span>
+<span class="iEtagInfo">4 / 5</span>
+
+<span class="iSreet">Улица:</span>
+<span class="iStreetInfo">И. Кулика ул.</span>
+
+
+<p class="iOpis">
+В продаже 2 комнатная квартира по ул. Кулика на 4 -м этаже.
+Общая 46 м2. Отличный 4-й этаж. 
+Состояние жилое, сделан ремонт в кухне, пол стены в плитке.
+Санузел совмещен. Столярка дерево, на...</p>
+
+
+<span class="iTel">
+Дмитрий Александрович тел. (066) 667-53-57</span>
+<span class="iPriceOld"></span>
+<span class="iPrice">
+29 000 у.е.</span>
+</div><div class="ItemBlock" id="item3782">
+<img src="public\images\starp.png" class="addToFav" onclick="addToFavID('3782');" alt="Добавить в избранное" id="imgStarPlus3782">
+<img src="public\images\starm.png" class="addToFav" onclick="addToFavID('3782');" alt="Добавить в избранное" id="imgStarMinus3782">
+
+<span class="iTitle"><a href="items-4.html?id=3782" target="newblank">Продам 2- комн. квартиру в Центре, пр. Ушакова.</a></span>
+<div class="iFoto">
+<a href="items-4.html?id=3782">
+<img src="public\images\small_17917.jpg" class="iFotoimg imgTop" style="margin: -31px 0 0 -0px">
+</a>
+</div>
+
+
+
+<span class="iType">Тип:</span>
+<span class="iTypeInfo">
+2-комн. квартира</span>
+
+<span class="iRayon">Район:</span>
+<span class="iRayonInfo">
+Центр</span>
+
+<span class="iSq">Площадь:</span>
+<span class="iSqInfo"> 44 / 29 / 6  м. кв.</span>
+
+<span class="iEtag">Этаж:</span>
+<span class="iEtagInfo">3 / 5</span>
+
+<span class="iSreet">Улица:</span>
+<span class="iStreetInfo">Ушакова просп.</span>
+
+
+<p class="iOpis">
+Продам 2- комн.квартиру в центре по пр. Ушакова. 3/5, площадь 44 кв.м. Квартира расположена в центре дома, не угловая, очень теплая и светлая. Сделан ремонт, установлены мп окна и двери, увеличен...</p>
+
+
+<span class="iTel">
+Людмила Огнерубова тел. (050) 666-27-64</span>
+<span class="iPriceOld"></span>
+<span class="iPrice">
+42 000 у.е.</span>
+</div><div class="ItemBlock" id="item2838">
+<img src="public\images\starp.png" class="addToFav" onclick="addToFavID('2838');" alt="Добавить в избранное" id="imgStarPlus2838">
+<img src="public\images\starm.png" class="addToFav" onclick="addToFavID('2838');" alt="Добавить в избранное" id="imgStarMinus2838">
+
+<span class="iTitle"><a href="items-5.html?id=2838" target="newblank">Продам 2 комн. квартиру в Центре по ул Воронцовская</a></span>
+<div class="iFoto">
+<a href="items-5.html?id=2838">
+<img src="public\images\small_11444.jpg" class="iFotoimg imgTop" style="margin: -31px 0 0 -0px">
+</a>
+</div>
+
+
+
+<span class="iType">Тип:</span>
+<span class="iTypeInfo">
+2-комн. квартира</span>
+
+<span class="iRayon">Район:</span>
+<span class="iRayonInfo">
+Порт, Порт-Элеватор</span>
+
+<span class="iSq">Площадь:</span>
+<span class="iSqInfo"> 52 / 30 / 6  м. кв.</span>
+
+<span class="iEtag">Этаж:</span>
+<span class="iEtagInfo">2 / 4</span>
+
+<span class="iSreet">Улица:</span>
+<span class="iStreetInfo">Воронцовская (Коммунаров) ул.</span>
+
+
+<p class="iOpis">
+Продам 2 комн. квартиру в Центре по улице Воронцовская. Общая площадь 52 м.кв, кухня 6 м.кв. В хорошем состоянии, есть 2 кондиционера, в ванной плитка, окна металлопластиковые, сан узел смежный....</p>
+
+
+<span class="iTel">
+АН Риэлт-Престиж тел. (095) 733-99-09</span>
+<span class="iPriceOld"></span>
+<span class="iPrice">
+28 500 у.е.</span>
+</div><div class="ItemBlock" id="item2985">
+<img src="public\images\starp.png" class="addToFav" onclick="addToFavID('2985');" alt="Добавить в избранное" id="imgStarPlus2985">
+<img src="public\images\starm.png" class="addToFav" onclick="addToFavID('2985');" alt="Добавить в избранное" id="imgStarMinus2985">
+
+<span class="iTitle"><a href="items-6.html?id=2985" target="newblank">Продам 2 комнатную квартиру в Центре</a></span>
+<div class="iFoto">
+<a href="items-6.html?id=2985">
+<img src="public\images\small_12461.jpg" class="iFotoimg imgTop" style="margin: -30px 0 0 -0px">
+</a>
+</div>
+
+
+
+<span class="iType">Тип:</span>
+<span class="iTypeInfo">
+2-комн. квартира</span>
+
+<span class="iRayon">Район:</span>
+<span class="iRayonInfo">
+Порт, Порт-Элеватор</span>
+
+<span class="iSq">Площадь:</span>
+<span class="iSqInfo"> 46 / 28 / 6  м. кв.</span>
+
+<span class="iEtag">Этаж:</span>
+<span class="iEtagInfo">1 / 5</span>
+
+<span class="iSreet">Улица:</span>
+<span class="iStreetInfo">Кошевой переулок</span>
+
+
+<p class="iOpis">
+Продам 2-комн. квартиру в Центре в хорошем жилом состоянии с мебелью и техникой, расположенную по адресу - Кошевой переулок. Общая площадь 46 м.кв, кухня 6 м.кв. Есть гараж во дворе. Рядом...</p>
+
+
+<span class="iTel">
+АН Риэлт-Престиж тел. (095) 733-99-09</span>
+<span class="iPriceOld"></span>
+<span class="iPrice">
+30 000 у.е.</span>
+</div><div class="ItemBlock" id="item961">
+<img src="public\images\starp.png" class="addToFav" onclick="addToFavID('961');" alt="Добавить в избранное" id="imgStarPlus961">
+<img src="public\images\starm.png" class="addToFav" onclick="addToFavID('961');" alt="Добавить в избранное" id="imgStarMinus961">
+
+<span class="iTitle"><a href="items-7.html?id=961" target="newblank">Продам 3-комн. квартиру по ул. Соборная, 1 этаж.</a></span>
+<div class="iFoto">
+<a href="items-7.html?id=961">
+<img src="public\images\small_12444.jpg" class="iFotoimg imgGor" style="margin: -0px 0 0 -31px">
+</a>
+</div>
+
+
+
+<span class="iType">Тип:</span>
+<span class="iTypeInfo">
+3-комн. квартира</span>
+
+<span class="iRayon">Район:</span>
+<span class="iRayonInfo">
+Центр</span>
+
+<span class="iSq">Площадь:</span>
+<span class="iSqInfo"> 60 / 43 / 8  м. кв.</span>
+
+<span class="iEtag">Этаж:</span>
+<span class="iEtagInfo">1 / 1</span>
+
+<span class="iSreet">Улица:</span>
+<span class="iStreetInfo">Соборная ул.</span>
+
+
+<p class="iOpis">
+Продам 3-комн. квартиру в Центре, по ул. Соборная (Ленина, район ДКС). Общая пл. 60 кв.м., жилая 43 кв.м., кухня 8 кв.м., комнаты: 22,5/ 11/ 11 м.кв. Дом 1-этажный с высоким цоколем, толстые стены, поэтому...</p>
+
+
+<span class="iTel">
+АН Риэлт-Престиж тел. (095) 733-99-09</span>
+<span class="iPriceOld">35 000 у.е.</span>
+<span class="iPrice">
+31 000 у.е.</span>
+</div><div class="ItemBlock" id="item1453">
+<img src="public\images\starp.png" class="addToFav" onclick="addToFavID('1453');" alt="Добавить в избранное" id="imgStarPlus1453">
+<img src="public\images\starm.png" class="addToFav" onclick="addToFavID('1453');" alt="Добавить в избранное" id="imgStarMinus1453">
+
+<span class="iTitle"><a href="items-8.html?id=1453" target="newblank">2-комн. квартира сталинка ХБК, ул. Перекопская с автономным отоплением</a></span>
+<div class="iFoto">
+<a href="items-8.html?id=1453">
+<img src="public\images\small_11264.jpg" class="iFotoimg imgTop" style="margin: -31px 0 0 -0px">
+</a>
+</div>
+
+
+
+<span class="iType">Тип:</span>
+<span class="iTypeInfo">
+2-комн. квартира</span>
+
+<span class="iRayon">Район:</span>
+<span class="iRayonInfo">
+ХБК, Стеклотара</span>
+
+<span class="iSq">Площадь:</span>
+<span class="iSqInfo"> 73 / 39 / 10  м. кв.</span>
+
+<span class="iEtag">Этаж:</span>
+<span class="iEtagInfo">2 / 2</span>
+
+<span class="iSreet">Улица:</span>
+<span class="iStreetInfo">Перекопская ул.</span>
+
+
+<p class="iOpis">
+Продается 2-комн. квартира на ХБК по ул. Перекопская, с автономным отоплением, общей площадью 72 м.кв. Квартира расположена на 2 этаже, не угловая. Частично сделан ремонт (одна комната и...</p>
+
+
+<span class="iTel">
+АН Риэлт-Престиж тел. (095) 733-99-09</span>
+<span class="iPriceOld"></span>
+<span class="iPrice">
+36 000 у.е.</span>
+</div><div class="ItemBlock" id="item2871">
+<img src="public\images\starp.png" class="addToFav" onclick="addToFavID('2871');" alt="Добавить в избранное" id="imgStarPlus2871">
+<img src="public\images\starm.png" class="addToFav" onclick="addToFavID('2871');" alt="Добавить в избранное" id="imgStarMinus2871">
+
+<span class="iTitle"><a href="items-9.html?id=2871" target="newblank">Сдам 1 комнатную квартиру на ХБК в районе Консервного завода.</a></span>
+<div class="iFoto">
+<a href="items-9.html?id=2871">
+<img src="public\images\small_11608.jpg" class="iFotoimg imgTop" style="margin: -31px 0 0 -0px">
+</a>
+</div>
+
+
+
+<span class="iType">Тип:</span>
+<span class="iTypeInfo">
+1-комн. квартира</span>
+
+<span class="iRayon">Район:</span>
+<span class="iRayonInfo">
+ХБК, Стеклотара</span>
+
+<span class="iSq">Площадь:</span>
+<span class="iSqInfo"> 33 / 25 / 7  м. кв.</span>
+
+<span class="iEtag">Этаж:</span>
+<span class="iEtagInfo">3 / 9</span>
+
+<span class="iSreet">Улица:</span>
+<span class="iStreetInfo">Перекопская ул.</span>
+
+
+<p class="iOpis">
+Сдам 1 комн квартиру в районе Консервного завода. Укомплектована бытовой техникой и мебелью. Есть стиральная машина, холодильник, кондиционер, газовая плита, микроволновка.</p>
+
+
+<span class="iTel">
+АН Риэлт-Престиж тел. (095) 733-99-09</span>
+<span class="iPriceOld"></span>
+<span class="iPrice">
+4 500 грн.</span>
+</div><div class="ItemBlock" id="item2761">
+<img src="public\images\starp.png" class="addToFav" onclick="addToFavID('2761');" alt="Добавить в избранное" id="imgStarPlus2761">
+<img src="public\images\starm.png" class="addToFav" onclick="addToFavID('2761');" alt="Добавить в избранное" id="imgStarMinus2761">
+
+<span class="iTitle"><a href="items-10.html?id=2761" target="newblank">Продается 3-х комнатная квартира на Таврическом</a></span>
+<div class="iFoto">
+<a href="items-10.html?id=2761">
+<img src="public\images\small_10894.jpg" class="iFotoimg imgGor" style="margin: -0px 0 0 -31px">
+</a>
+</div>
+
+
+
+<span class="iType">Тип:</span>
+<span class="iTypeInfo">
+3-комн. квартира</span>
+
+<span class="iRayon">Район:</span>
+<span class="iRayonInfo">
+Северный, Таврический</span>
+
+<span class="iSq">Площадь:</span>
+<span class="iSqInfo"> 68 / 42 / 9  м. кв.</span>
+
+<span class="iEtag">Этаж:</span>
+<span class="iEtagInfo">9 / 10</span>
+
+<span class="iSreet">Улица:</span>
+<span class="iStreetInfo">49-й Гвардейской Дивизии ул.</span>
+
+
+<p class="iOpis">
+Продам 3х комнатную квартиру на Таврическом, по улице 49 Гвардейской дивизии. Этаж 9/10. Квартира общей площадью 68 кв.м., кухня 9м.кв. В отличном состоянии, после ремонта. 3 балкона застеклены,...</p>
+
+
+<span class="iTel">
+АН Риэлт-Престиж тел. (095) 733-99-09</span>
+<span class="iPriceOld"></span>
+<span class="iPrice">
+47 500 у.е.</span>
+</div><div class="ItemBlock" id="item1050">
+<img src="public\images\starp.png" class="addToFav" onclick="addToFavID('1050');" alt="Добавить в избранное" id="imgStarPlus1050">
+<img src="public\images\starm.png" class="addToFav" onclick="addToFavID('1050');" alt="Добавить в избранное" id="imgStarMinus1050">
+
+<span class="iTitle"><a href="items-11.html?id=1050" target="newblank">Продам шикарную 3-комн. квартиру в Сталинке.</a></span>
+<div class="iFoto">
+<a href="items-11.html?id=1050">
+<img src="public\images\small_12172.jpg" class="iFotoimg imgGor" style="margin: -0px 0 0 -31px">
+</a>
+</div>
+
+
+
+<span class="iType">Тип:</span>
+<span class="iTypeInfo">
+3-комн. квартира</span>
+
+<span class="iRayon">Район:</span>
+<span class="iRayonInfo">
+ХБК, Стеклотара</span>
+
+<span class="iSq">Площадь:</span>
+<span class="iSqInfo"> 93 / 57 / 11  м. кв.</span>
+
+<span class="iEtag">Этаж:</span>
+<span class="iEtagInfo">3 / 4</span>
+
+<span class="iSreet">Улица:</span>
+<span class="iStreetInfo">Текстильщиков просп.</span>
+
+
+<p class="iOpis">
+Продам шикарную 3-комн. квартиру с нестандартной планировки в "сталинке".  Расположена по просп. Текстильщиков, на 3 м этаже 4-этажного дома. Общая площадь составляет 93 кв.м, жилая 57 м.кв.,...</p>
+
+
+<span class="iTel">
+АН Риэлт-Престиж тел. (095) 733-99-09</span>
+<span class="iPriceOld"></span>
+<span class="iPrice">
+65 000 у.е.</span>
+</div><div class="ItemBlock" id="item3042">
+<img src="public\images\starp.png" class="addToFav" onclick="addToFavID('3042');" alt="Добавить в избранное" id="imgStarPlus3042">
+<img src="public\images\starm.png" class="addToFav" onclick="addToFavID('3042');" alt="Добавить в избранное" id="imgStarMinus3042">
+
+<span class="iTitle"><a href="items-12.html?id=3042" target="newblank">Продам 3 комн квартиру на Таврическом индивидуальное отопление</a></span>
+<div class="iFoto">
+<a href="items-12.html?id=3042">
+<img src="public\images\small_12884.jpg" class="iFotoimg imgGor" style="margin: -0px 0 0 -31px">
+</a>
+</div>
+
+
+
+<span class="iType">Тип:</span>
+<span class="iTypeInfo">
+3-комн. квартира</span>
+
+<span class="iRayon">Район:</span>
+<span class="iRayonInfo">
+Северный, Таврический</span>
+
+<span class="iSq">Площадь:</span>
+<span class="iSqInfo"> 79 / 55 / 9  м. кв.</span>
+
+<span class="iEtag">Этаж:</span>
+<span class="iEtagInfo">9 / 10</span>
+
+<span class="iSreet">Улица:</span>
+<span class="iStreetInfo">Сенявина просп.</span>
+
+
+<p class="iOpis">
+Продам 3 комн. квартиру в хорошем жилом состоянии на Таврическом, по просп. Сенявина. Общей площадью 79 м.кв, кухня 9 м.кв. С индивидуальным отоплением, газовый 2 контурный котел и электро...</p>
+
+
+<span class="iTel">
+АН Риэлт-Престиж тел. (095) 733-99-09</span>
+<span class="iPriceOld"></span>
+<span class="iPrice">
+50 000 у.е.</span>
+</div><div class="ItemBlock" id="item3578">
+<img src="public\images\starp.png" class="addToFav" onclick="addToFavID('3578');" alt="Добавить в избранное" id="imgStarPlus3578">
+<img src="public\images\starm.png" class="addToFav" onclick="addToFavID('3578');" alt="Добавить в избранное" id="imgStarMinus3578">
+
+<span class="iTitle"><a href="items-13.html?id=3578" target="newblank">Продам участок в центре Зеленовки</a></span>
+<div class="iFoto">
+<a href="items-13.html?id=3578">
+<img src="public\images\uch.jpg" class="iFotoimg">
+</a>
+</div>
+
+
+
+<span class="iType">Тип:</span>
+<span class="iTypeInfo">
+Земельный участок</span>
+
+<span class="iRayon">Район:</span>
+<span class="iRayonInfo">
+Зеленовка</span>
+
+
+
+<span class="iSreet">Улица:</span>
+<span class="iStreetInfo">Таврическая ул.</span>
+
+<span class="iUch">Участок:</span>
+<span class="iUchInfo">12 сот.</span>
+
+<p class="iOpis">
+Продам участок в центре Зеленовки по улице Таврическая. Общая площадь 12 соток. Рядом дом культуры, церковь, стадион, остановка, садик, школа.</p>
+
+
+<span class="iTel">
+АН Риэлт-Престиж тел. (095) 733-99-09</span>
+<span class="iPriceOld"></span>
+<span class="iPrice">
+5 000 у.е.</span>
+</div><div class="ItemBlock" id="item2794">
+<img src="public\images\starp.png" class="addToFav" onclick="addToFavID('2794');" alt="Добавить в избранное" id="imgStarPlus2794">
+<img src="public\images\starm.png" class="addToFav" onclick="addToFavID('2794');" alt="Добавить в избранное" id="imgStarMinus2794">
+
+<span class="iTitle"><a href="items-14.html?id=2794" target="newblank">Продам 3-х комн. квартиру в центре возле СБУ</a></span>
+<div class="iFoto">
+<a href="items-14.html?id=2794">
+<img src="public\images\small_11420.jpg" class="iFotoimg imgTop" style="margin: -31px 0 0 -0px">
+</a>
+</div>
+
+
+
+<span class="iType">Тип:</span>
+<span class="iTypeInfo">
+3-комн. квартира</span>
+
+<span class="iRayon">Район:</span>
+<span class="iRayonInfo">
+Центр</span>
+
+<span class="iSq">Площадь:</span>
+<span class="iSqInfo"> 58 / 42 / 7  м. кв.</span>
+
+<span class="iEtag">Этаж:</span>
+<span class="iEtagInfo">4 / 5</span>
+
+<span class="iSreet">Улица:</span>
+<span class="iStreetInfo">Лютеранская (Кирова) ул.</span>
+
+
+<p class="iOpis">
+Продам 3 квартиру в центре города, по ул. Кирова. Общая площадь 58 м.кв, кухня 7 м.кв. Мебель остается, есть кондиционер, газколонка, балкон лоджия. Чистый дом, парковочное место. Рядом СБУ,...</p>
+
+
+<span class="iTel">
+АН Риэлт-Престиж тел. (095) 733-99-09</span>
+<span class="iPriceOld">49 000 у.е.</span>
+<span class="iPrice">
+44 500 у.е.</span>
+</div><div class="ItemBlock" id="item132">
+<img src="public\images\starp.png" class="addToFav" onclick="addToFavID('132');" alt="Добавить в избранное" id="imgStarPlus132">
+<img src="public\images\starm.png" class="addToFav" onclick="addToFavID('132');" alt="Добавить в избранное" id="imgStarMinus132">
+
+<span class="iTitle"><a href="items-15.html?id=132" target="newblank">Продам 1-комн. квартиру в Центре!</a></span>
+<div class="iFoto">
+<a href="items-15.html?id=132">
+<img src="public\images\small_397.jpg" class="iFotoimg imgTop" style="margin: -31px 0 0 -0px">
+</a>
+</div>
+
+
+
+<span class="iType">Тип:</span>
+<span class="iTypeInfo">
+1-комн. квартира</span>
+
+<span class="iRayon">Район:</span>
+<span class="iRayonInfo">
+Центр</span>
+
+<span class="iSq">Площадь:</span>
+<span class="iSqInfo"> 34 / 19.5 / 7.4  м. кв.</span>
+
+<span class="iEtag">Этаж:</span>
+<span class="iEtagInfo">2 / 2</span>
+
+<span class="iSreet">Улица:</span>
+<span class="iStreetInfo">Торговая (21-Января) ул.</span>
+
+
+<p class="iOpis">
+Продам 1-комн. квартиру в Центре, по ул. Торговая (21-Января), район центрального рынка. Этаж 2/2. Площадь 34 м.кв., комната 19,5 м.кв., кухня 7,4 м.кв. Крыша в хорошем состоянии, шифер. Сан. узел в...</p>
+
+
+<span class="iTel">
+АН Риэлт-Престиж тел. (095) 733-99-09</span>
+<span class="iPriceOld">19 500 у.е.</span>
+<span class="iPrice">
+17 000 у.е.</span>
+</div><div class="ItemBlock" id="item2774">
+<img src="public\images\starp.png" class="addToFav" onclick="addToFavID('2774');" alt="Добавить в избранное" id="imgStarPlus2774">
+<img src="public\images\starm.png" class="addToFav" onclick="addToFavID('2774');" alt="Добавить в избранное" id="imgStarMinus2774">
+
+<span class="iTitle"><a href="items-16.html?id=2774" target="newblank">Продается 2 комнатная квартира на ХБК</a></span>
+<div class="iFoto">
+<a href="items-16.html?id=2774">
+<img src="public\images\small_11030.jpg" class="iFotoimg imgTop" style="margin: -31px 0 0 -0px">
+</a>
+</div>
+
+
+
+<span class="iType">Тип:</span>
+<span class="iTypeInfo">
+2-комн. квартира</span>
+
+<span class="iRayon">Район:</span>
+<span class="iRayonInfo">
+ХБК, Стеклотара</span>
+
+<span class="iSq">Площадь:</span>
+<span class="iSqInfo"> 55 / 48 / 11  м. кв.</span>
+
+<span class="iEtag">Этаж:</span>
+<span class="iEtagInfo">1 / 4</span>
+
+<span class="iSreet">Улица:</span>
+<span class="iStreetInfo">Университетская ул. </span>
+
+
+<p class="iOpis">
+Продается 2х комнатная квартира на ХБК, по ул. Университетская, с хорошим качественным ремонтом, светлые просторные комнаты, большие окна,высокие натяжные потолки. С отдельным входом,...</p>
+
+
+<span class="iTel">
+АН Риэлт-Престиж тел. (095) 733-99-09</span>
+<span class="iPriceOld"></span>
+<span class="iPrice">
+50 000 у.е.</span>
+</div><div class="ItemBlock" id="item1746">
+<img src="public\images\starp.png" class="addToFav" onclick="addToFavID('1746');" alt="Добавить в избранное" id="imgStarPlus1746">
+<img src="public\images\starm.png" class="addToFav" onclick="addToFavID('1746');" alt="Добавить в избранное" id="imgStarMinus1746">
+
+<span class="iTitle"><a href="items-17.html?id=1746" target="newblank">Продам большие пол дома, в отличном месте на Мельницах</a></span>
+<div class="iFoto">
+<a href="items-17.html?id=1746">
+<img src="public\images\small_11490.jpg" class="iFotoimg imgTop" style="margin: -31px 0 0 -0px">
+</a>
+</div>
+
+
+
+<span class="iType">Тип:</span>
+<span class="iTypeInfo">
+Дом</span>
+
+<span class="iRayon">Район:</span>
+<span class="iRayonInfo">
+ХБК, Стеклотара</span>
+
+<span class="iSq">Площадь:</span>
+<span class="iSqInfo"> 91 / 80  / 12  м. кв.</span>
+
+<span class="iEtag">Этажность:</span>
+<span class="iEtagInfo">2</span>
+
+<span class="iSreet">Улица:</span>
+<span class="iStreetInfo">Университетская ул.</span>
+
+<span class="iUch">Участок:</span>
+<span class="iUchInfo">3 сот.</span>
+
+<p class="iOpis">
+Продам большой дом, с мансардным этажом ул. Университетская (40 лет октября).Год постройки 90-е. Общая пл. 91 м.кв., комнаты 3, одна из них 44 м.кв. Сделан евроремонт. Все удобства в доме. Участок...</p>
+
+
+<span class="iTel">
+АН Риэлт-Престиж тел. (095) 733-99-09</span>
+<span class="iPriceOld">79 000 у.е.</span>
+<span class="iPrice">
+75 000 у.е.</span>
+</div><div class="ItemBlock" id="item2779">
+<img src="public\images\starp.png" class="addToFav" onclick="addToFavID('2779');" alt="Добавить в избранное" id="imgStarPlus2779">
+<img src="public\images\starm.png" class="addToFav" onclick="addToFavID('2779');" alt="Добавить в избранное" id="imgStarMinus2779">
+
+<span class="iTitle"><a href="items-18.html?id=2779" target="newblank">Продам 2-х комнатную квартиру на Таврическом</a></span>
+<div class="iFoto">
+<a href="items-18.html?id=2779">
+<img src="public\images\small_11079.jpg" class="iFotoimg imgGor" style="margin: -0px 0 0 -31px">
+</a>
+</div>
+
+
+
+<span class="iType">Тип:</span>
+<span class="iTypeInfo">
+2-комн. квартира</span>
+
+<span class="iRayon">Район:</span>
+<span class="iRayonInfo">
+Северный, Таврический</span>
+
+<span class="iSq">Площадь:</span>
+<span class="iSqInfo"> 50 / 40 / 9  м. кв.</span>
+
+<span class="iEtag">Этаж:</span>
+<span class="iEtagInfo">1 / 9</span>
+
+<span class="iSreet">Улица:</span>
+<span class="iStreetInfo">проспект 200 лет Херсона</span>
+
+
+<p class="iOpis">
+Продается 2х комнатная квартира на Таврическом по пр. 200 лет Херсона.Этаж 1/9. Общей площадь 55 кв.м возможна под коммерцию - магазин, стоматологию, офис. Состояние отличное. Отдельный вход....</p>
+
+
+<span class="iTel">
+АН Риэлт-Престиж тел. (095) 733-99-09</span>
+<span class="iPriceOld">50 000 у.е.</span>
+<span class="iPrice">
+39 000 у.е.</span>
+</div><div class="ItemBlock" id="item870">
+<img src="public\images\starp.png" class="addToFav" onclick="addToFavID('870');" alt="Добавить в избранное" id="imgStarPlus870">
+<img src="public\images\starm.png" class="addToFav" onclick="addToFavID('870');" alt="Добавить в избранное" id="imgStarMinus870">
+
+<span class="iTitle"><a href="items-19.html?id=870" target="newblank">Продам дом на ХБК!</a></span>
+<div class="iFoto">
+<a href="items-19.html?id=870">
+<img src="public\images\small_4925.jpg" class="iFotoimg imgGor" style="margin: -0px 0 0 -31px">
+</a>
+</div>
+
+
+
+<span class="iType">Тип:</span>
+<span class="iTypeInfo">
+Дом</span>
+
+<span class="iRayon">Район:</span>
+<span class="iRayonInfo">
+Военка, Цыганка, Слободка</span>
+
+<span class="iSq">Площадь:</span>
+<span class="iSqInfo"> 80 / 60 / 10  м. кв.</span>
+
+<span class="iEtag">Этажность:</span>
+<span class="iEtagInfo">1</span>
+
+<span class="iSreet">Улица:</span>
+<span class="iStreetInfo">3 Приднепровская ул.</span>
+
+<span class="iUch">Участок:</span>
+<span class="iUchInfo">5 сот.</span>
+
+<p class="iOpis">
+Продам дом, на хбк по ул. Приднепровская. Построен в 60-х годах, саман, обложен кирпичем и утеплен пенопластом, оштукатурен, в хорошем жилом состоянии со всеми коммуникациями, окна мп,...</p>
+
+
+<span class="iTel">
+АН Риэлт-Престиж тел. (095) 733-99-09</span>
+<span class="iPriceOld"></span>
+<span class="iPrice">
+20 000 у.е.</span>
+</div></div>
+
+<div class="nedvPage">
+<div class="NewPageThis">
+<a href="age=0">1</a>
+</div>
+<div class="NewPage">
+<a href="age=1">2</a>
+</div>
+<div class="NewPage">
+<a href="age=2">3</a>
+</div>
+<div class="NewPage">
+<a href="age=3">4</a>
+</div>
+<div class="NewPage">
+<a href="age=4">5</a>
+</div>
+<div class="NewPage">
+<a href="age=5">6</a>
+</div>
+<div class="NewPage">
+<a href="age=6">7</a>
+</div>
+<div class="NewPage">
+<a href="age=7">8</a>
+</div>
+<div class="NewPage">
+<a href="age=8">9</a>
+</div>
+<div class="NewPage">
+<a href="age=9">10</a>
+</div>
+<div class="NewPage">
+<a href="age=10">11</a>
+</div>
+<div class="NewPage">
+<a href="age=11">12</a>
+</div>
+<div class="NewPage">
+<a href="age=12">13</a>
+</div>
+<div class="NewPage">
+<a href="age=13">14</a>
+</div>
+<div class="NewPage">
+<a href="age=14">15</a>
+</div>
+<div class="NewPage">
+<a href="age=15">16</a>
+</div>
+<div class="NewPage">
+<a href="age=16">17</a>
+</div>
+<div class="NewPage">
+<a href="age=17">18</a>
+</div>
+<div class="NewPage">
+<a href="age=18">19</a>
+</div>
+<div class="NewPage">
+<a href="age=19">20</a>
+</div>
+<div class="NewPage">
+<a href="age=20">21</a>
+</div>
+<div class="NewPage">
+<a href="age=21">22</a>
+</div>
+<div class="NewPage">
+<a href="age=22">23</a>
+</div>
+<div class="NewPage">
+<a href="age=23">24</a>
+</div>
+<div class="NewPage">
+<a href="age=24">25</a>
+</div>
+<div class="NewPage">
+<a href="age=25">26</a>
+</div>
+<div class="NewPage">
+<a href="age=26">27</a>
+</div>
+<div class="NewPage">
+<a href="age=27">28</a>
+</div>
+<div class="NewPage">
+<a href="age=28">29</a>
+</div>
+<div class="NewPage">
+<a href="age=29">30</a>
+</div>
+<div class="NewPage">
+<a href="age=30">31</a>
+</div>
+<div class="NewPage">
+<a href="age=31">32</a>
+</div>
+<div class="NewPage">
+<a href="age=32">33</a>
+</div>
+<div class="NewPage">
+<a href="age=33">34</a>
+</div>
+<div class="NewPage">
+<a href="age=34">35</a>
+</div>
+<div class="NewPage">
+<a href="age=35">36</a>
+</div>
+<div class="NewPage">
+<a href="age=36">37</a>
+</div>
+<div class="NewPage">
+<a href="age=37">38</a>
+</div>
+<div class="NewPage">
+<a href="age=38">39</a>
+</div>
+<div class="NewPage">
+<a href="age=39">40</a>
+</div>
+<div class="NewPage">
+<a href="age=40">41</a>
+</div>
+<div class="NewPage">
+<a href="age=41">42</a>
+</div>
+<div class="NewPage">
+<a href="age=42">43</a>
+</div>
+<div class="NewPage">
+<a href="age=43">44</a>
+</div>
+<div class="NewPage">
+<a href="age=44">45</a>
+</div>
+<div class="NewPage">
+<a href="age=45">46</a>
+</div>
+<div class="NewPage">
+<a href="age=46">47</a>
+</div>
+<div class="NewPage">
+<a href="age=47">48</a>
+</div>
+<div class="NewPage">
+<a href="age=48">49</a>
+</div>
+<div class="NewPage">
+<a href="age=49">50</a>
+</div>
+<div class="NewPage">
+<a href="age=50">51</a>
+</div>
+<div class="NewPage">
+<a href="age=51">52</a>
+</div>
+<div class="NewPage">
+<a href="age=52">53</a>
+</div>
+<div class="NewPage">
+<a href="age=53">54</a>
+</div>
+<div class="NewPage">
+<a href="age=54">55</a>
+</div>
+<div class="NewPage">
+<a href="age=55">56</a>
+</div>
+<div class="NewPage">
+<a href="age=56">57</a>
+</div>
+<div class="NewPage">
+<a href="age=57">58</a>
+</div>
+<div class="clearPage"></div>
+</div>
+
+<!-- Спец предложение -->
+<div class="SpecCont">
+<p><span>Специальные предложения</span></p>
+
+<div class="Spr" onclick="document.location.href='items.php?id=2339'">
+<img src="public\images\small_7898.jpg">
+<div class="FutSpr"><span>35 000$</span></div>
+<div class="TopSpr"><span>4-комн. квартира</span></div>
+</div>
+<div class="Spr" onclick="document.location.href='items.php?id=2522'">
+<img src="public\images\small_9242.jpg">
+<div class="FutSpr"><span>32 000$</span></div>
+<div class="TopSpr"><span>2-комн. квартира</span></div>
+</div>
+<div class="Spr" onclick="document.location.href='items.php?id=1753'">
+<img src="public\images\small_5720.jpg">
+<div class="FutSpr"><span>56 000$</span></div>
+<div class="TopSpr"><span>Дом</span></div>
+</div>
+
+
+<!-- !!!Спец предложение -->
+
+<div class="winOnlineSale">
+<span class="winOnlineSaleClose" onclick="onLineButOut();">X</span>
+<select name="type" class="SaleTypeLine">
+ <option value="1-комн. квартира">1-комн. квартира</option>
+ <option value="2-комн. квартира">2-комн. квартира</option>
+ <option value="3-комн. квартира">3-комн. квартира</option>
+ <option value="4-комн. квартира и более">4-комн. квартира и более</option>
+ <option value="Дом или часть дома">Дом или часть дома</option>
+ <option value="Земельный участок">Земельный участок</option>
+ <option value="Земельный участок">Коммерческая недвижимость</option>
+</select>
+
+<select name="rayon" class="SaleRayonLine">
+ <option value="1-комн. квартира">1-комн. квартира</option>
+ <option value="2-комн. квартира">2-комн. квартира</option>
+ <option value="3-комн. квартира">3-комн. квартира</option>
+ <option value="4-комн. квартира и более">4-комн. квартира и более</option>
+ <option value="Дом или часть дома">Дом или часть дома</option>
+ <option value="Земельный участок">Земельный участок</option>
+ <option value="Земельный участок">Коммерческая недвижимость</option>
+</select>
+
+<input type="text" name="price" class="SalePriceLine" placeholder="Цена (долл.)" required="">
+
+<input type="text" name="name" class="SaleNameLine" placeholder="Имя">
+<input type="text" name="tel" class="SaleTelLine" placeholder="Телефон" required="">
+<textarea class="SaleTextArea" name="text" placeholder="Описание" required=""></textarea>
+
+<input type="file" class="SaleFoto1">
+<input type="file" class="SaleFoto2">
+<input type="file" class="SaleFoto3">
+<input type="file" class="SaleFoto4">
+
+<input type="submit" class="SaleSendBut" value="ОТПРАВИТЬ">
+
+</div>
+
+<div class="footer">
+
+<div class="TegFut">
+
+<p><span>Продажа квартир:</span></p>
+<p><a href="https://www.volvocars.com/us/v/cars/c40-electric">1-комн. квартиры</a></p>
+<p><a href="https://www.volvocars.com/us/v/cars/c40-electric">2-комн. квартиры</a></p>
+<p><a href="https://www.volvocars.com/us/v/cars/c40-electric">3-комн. квартиры</a></p>
+<p><a href="https://www.volvocars.com/us/v/cars/c40-electric">4-комн. квартиры</a></p>
+<p><a href="https://www.volvocars.com/us/v/cars/c40-electric">5-комн. и более квартиры</a></p>
+<p><a href="https://www.volvocars.com/us/v/cars/c40-electric">Коммунальные квартиры</a></p>
+
+</div>
+<div class="TegFut">
+<p><span>Продажа домов:</span></p>
+<p><a href="https://www.volvocars.com/us/v/cars/c40-electric">Дома</a></p>
+<p><a href="https://www.volvocars.com/us/v/cars/c40-electric">Часть дома</a></p>
+<p><a href="=1">Земельные участки</a></p>
+
+<p><span>Коммерческая недвижимость:</span></p>
+<p><a href="https://www.volvocars.com/us/v/cars/c40-electric">Офисы</a></p>
+<p><a href="https://www.volvocars.com/us/v/cars/c40-electric">Торговые площадки</a></p>
+</div>
+
+<div class="TegFut">
+<p><span>Аренда:</span></p>
+<p><a href="https://www.volvocars.com/us/v/cars/c40-electric">1-комн. квартиры</a></p>
+<p><a href="https://www.volvocars.com/us/v/cars/c40-electric">2-комн. квартиры</a></p>
+<p><a href="https://www.volvocars.com/us/v/cars/c40-electric">3-комн. квартиры</a></p>
+<p><a href="https://www.volvocars.com/us/v/cars/c40-electric">4-комн. и болееквартиры</a></p>
+<p><a href="https://www.volvocars.com/us/v/cars/c40-electric">Дома</a></p>
+<p><a href="https://www.volvocars.com/us/v/cars/c40-electric">Офисы</a></p>
+<p><a href="https://www.volvocars.com/us/v/cars/c40-electric">Торговые площатки</a></p>
+</div>
+
+<div class="TegFut">
+<p><span>Контакты:</span></p>
+<p><a href="tel:0957339909">+38 (095) 733-99-09</a></p>
+<p><a href="tel:0687339909">+38 (068) 733-99-09</a></p>
+<p><a href="https://www.volvocars.com/us/v/cars/c40-electric">г. Херсон, ул. Ф.Орлика, д. 21/26</a></p>
+<p><a href="mailto:info@vdome.ks.ua">info@vdome.ks.ua</a></p>
+
+<p><span>Наши партнёры:</span></p>
+
+<a href="https://r24.ua/" target="_blank" title="R24.ua: Поиск недвижимости в Украине" style="padding: 5px 10px; background-color: #fff; border: 1px solid #ddd; display: inline-block; border-radius: 3px;">
+<img alt="R24.ua — недвижимость Киева и Украины" src="https://r24.ua/images/svg/logo.svg" height="24">
+</a>
+ 
+<a target="_blank" href="https://www.lun.ua/продажа-квартир-херсон" title="Партнер пошукової системи - ЛУН"><img style="width: 88px;height: 31px;" src="https://partner.lun.ua/cdn/lun-partners-88x31_retina-wh.png" alt="www.lun.ua"></a>
+
+
+
+
+</div>
+
+</div>
+
+<div style="clear:both;"></div>
+
+
+
+
+<div class="mfon" id="mfon" onclick="onLineButOut();"></div>
+<div class="winOnLine" id="win1">
+<span class="winClose" onclick="onLineButOut();">X</span>
+<div class="butWin1" onclick="onWinSale('1');"><span>Продать недвижимость</span></div>
+<div class="butWin1" onclick="onWinSale('0');"><span>Сдать в аренду</span></div>
+</div>
+
+<div class="mfon" id="mfon2" onclick="offWinSale();"></div>
+<div class="winOnlineSale" id="WinSaleSend">
+<span class="winOnlineSaleClose" onclick="offWinSale();">X</span>
+﻿<form action="action_mail.php" method="post" enctype="multipart/form-data">
+<select name="type" class="SaleTypeLine">
+ <option value="1-комн. квартира">1-комн. квартира</option>
+ <option value="2-комн. квартира">2-комн. квартира</option>
+ <option value="3-комн. квартира">3-комн. квартира</option>
+ <option value="4-комн. квартира и более">4-комн. квартира и более</option>
+ <option value="Дом или часть дома">Дом или часть дома</option>
+ <option value="Земельный участок">Земельный участок</option>
+ <option value="Земельный участок">Коммерческая недвижимость</option>
+</select>
+
+<select name="rayon" class="SaleRayonLine">
+ <option value="Антоновка">Антоновка</option>
+ <option value="Военка, Цыганка, Слободка">Военка, Цыганка, Слободка</option>
+ <option value="Восточный, Киндийка">Восточный, Киндийка</option>
+ <option value="Жиллмасив, Привокзальный">Жиллмасив, Привокзальный</option>
+ <option value="Жилпосёлок">Жилпосёлок</option>
+ <option value="Забалка, Сухарный">Забалка, Сухарный</option>
+ <option value="Зеленовка">Зеленовка</option>
+ <option value="Мельницы">Мельницы</option>
+ <option value="Остров, Нефтегавань">Остров, Нефтегавань</option>
+ <option value="Порт, Порт-Элеватор">Порт, Порт-Элеватор</option>
+ <option value="пос. Янтарный">пос. Янтарный</option>
+ <option value="Геологов, Куйбышево, Камышаны">Геологов, Куйбышево, Камышаны</option>
+ <option value="Северный, Таврический">Северный, Таврический</option>
+ <option value="Степановка">Степановка</option>
+ <option value="ХБК, Стеклотара">ХБК, Стеклотара</option>
+ <option value="Центр">Центр</option>
+ <option value="Чернобаевка">Чернобаевка</option>
+ <option value="Шуменский">Шуменский</option>
+ <option value="Текстильный">Текстильный</option>
+</select>
+
+<input type="text" name="priceusd" class="SalePriceLine" placeholder="Цена (долл.)" id="priceusd">
+<input type="text" name="priceuah" class="SalePriceLine" placeholder="Цена (грн.)" id="priceuah">
+
+<input type="text" name="fio" class="SaleNameLine" placeholder="Имя">
+<input type="text" name="tel" class="SaleTelLine" placeholder="Телефон" id="tel">
+<textarea class="SaleTextArea" name="text" placeholder="Описание"></textarea>
+<input type="hidden" name="uri" value="/">
+<input type="file" name="mail_file" class="SaleFoto1">
+<input type="file" name="mail_file1" class="SaleFoto2">
+<input type="file" name="mail_file2" class="SaleFoto3">
+<input type="file" name="mail_file3" class="SaleFoto4">
+
+<input type="submit" class="SaleSendBut" value="ОТПРАВИТЬ" onclick="showLoder();">
+</form>
+</div>
+
+
+<div class="prefoto" id="prefoto">
+<span class="lfoto" id="lfoto">Загрузка фото...</span>
+<img src="public\images\378.gif" id="limg">
+</div>
+
+
+
+
+
+</div></body>
+</html>
